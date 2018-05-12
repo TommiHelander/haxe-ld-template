@@ -42,7 +42,7 @@ lime test html5
 Run the haxe compiler in server mode to speed up compilation:
 
 ```
-haxe --wait 6000
+haxe --wait 6001
 ```
 
 Start a second terminal window, and in it BrowserSync to refresh the software on build:
@@ -56,4 +56,9 @@ Compile to see changes. I recommend you make a comfortable keyboard shortcut for
 
 ```
 lime test html5
+```
+
+If you want to build automatically when saving a source file, then run the autobuild script (it uses inotify and currently works only on Linux):
+```
+./autobuild.sh
 ```
